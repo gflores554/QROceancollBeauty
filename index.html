@@ -1,62 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+  <head>
+    <style>
+      .frame {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confirmación - Oceancoll</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: "Arial", sans-serif;
-      background-color: #81b7e4; /* Seagull */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+      .frame .overlap-group-wrapper {
+        background-color: #ffffff;
+        width: 500px;
+        height: 500px;
+      }
 
-    .container {
-      text-align: center;
-      padding: 20px;
-      border-radius: 15px;
-      background-color: #2d6072; /* Casal */
-      width: 90%;
-      max-width: 300px;
-    }
+      .frame .overlap-group {
+        position: relative;
+        height: 500px;
+        background-image: url(./img/istock-1400790908-1-1.png);
+        background-size: cover;
+        background-position: 50% 50%;
+      }
 
-    .ocean-image {
-      width: 60%;
-      border-radius: 15px;
-      margin-bottom: 15px;
-    }
+      .frame .text-wrapper {
+        position: absolute;
+        width: 328px;
+        height: 64px;
+        top: 145px;
+        left: 86px;
+        font-family: "Beatrice Trial-Semibold", Helvetica;
+        font-weight: 400;
+        color: #323232;
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
 
-    h1 {
-      color: #81b7e4; /* Seagull */
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #6d9faf; /* Hippie Blue */
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <img src="https://d9hhrg4mnvzow.cloudfront.net/www.empower.eco/plastic-credits/7ba21a5c-chowpatty-2-after-original-original_1000000000000000000028.png" alt="Imagen del océano" class="ocean-image">
-    <h1>¡Gracias!</h1>
-    <p>2 KG de plástico menos en el océano.</p>
-  </div>
-
-  <script>
-    setTimeout(function(){
-        window.location.href = "https://oceancoll.com/";
-    }, 2000); // 2000 milisegundos = 2 segundos
-  </script>
-</body>
-
+      .frame .div {
+        position: absolute;
+        width: 330px;
+        height: 101px;
+        top: 187px;
+        left: 85px;
+        font-family: "Beatrice Trial-Semibold", Helvetica;
+        font-weight: 400;
+        color: #323232;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="text-wrapper">¡Muchas gracias!</div>
+          <p class="div">Con tu ayuda hemos eliminado 2 kg de plástico del océano</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      setTimeout(function(){
+          window.location.href = "https://theoddity.eu/es/pages/discover-beauty";
+      }, 2000); // 2000 milisegundos = 2 segundos
+    </script>
+  </body>
 </html>
