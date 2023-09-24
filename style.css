@@ -1,35 +1,51 @@
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #81b7e4; /* Seagull */
+.frame {
+  background-color: #ffffff;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  width: 100%;
 }
 
-.container {
+.frame .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 500px;
+  height: 500px;
+}
+
+.frame .overlap-group {
+  position: relative;
+  height: 500px;
+  background-image: url(./img/istock-1400790908-1-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  width: 328px;
+  height: 64px;
+  top: 145px;
+  left: 86px;
+  font-family: "Beatrice Trial-Semibold", Helvetica;
+  font-weight: 400;
+  color: #323232;
+  font-size: 32px;
   text-align: center;
-  padding: 20px;
-  border-radius: 15px;
-  background-color: #2d6072; /* Casal */
-  width: 90%;
-  max-width: 300px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-.ocean-image {
-  width: 60%;
-  border-radius: 15px;
-  margin-bottom: 15px;
-}
-
-h1 {
-  color: #81b7e4; /* Seagull */
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  color: #6d9faf; /* Hippie Blue */
+.frame .div {
+  position: absolute;
+  width: 330px;
+  height: 101px;
+  top: 187px;
+  left: 85px;
+  font-family: "Beatrice Trial-Semibold", Helvetica;
+  font-weight: 400;
+  color: #323232;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
 }
