@@ -1,27 +1,120 @@
 <!DOCTYPE html>
-<html style="height: 100%;">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Confirmación</title>
-    <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background-color: rgb(14, 14, 14);
-            overflow: hidden; /* Evita el desplazamiento si la imagen es más grande que la pantalla */
+    <style>
+        @font-face {
+            font-family: 'Beatrice Trial-Semibold';
+            src: url('https://github.com/gflores554/qroceancoll/blob/6650582354fbc7df16ccc4c8587156937a09c571/Beatrice.woff2') format('woff2'),
+                url('https://github.com/gflores554/qroceancoll/blob/6650582354fbc7df16ccc4c8587156937a09c571/Beatrice.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
-        img {
-            display: block;
-            width: 100vw; /* Ancho de la ventana del navegador */
-            height: 100vh; /* Alto de la ventana del navegador */
-            object-fit: cover; /* Asegura que la imagen cubra toda la pantalla sin deformarse */
-            margin: auto;
+
+        .iphone-pro-max {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .iphone-pro-max .iphone-wrapper {
+            background-color: #ffffff;
+            overflow: hidden;
+            width: 430px;
+            height: 932px;
+        }
+
+        .iphone-pro-max .iphone {
+            height: 952px;
+            background-color: #ffffff;
+        }
+
+        .iphone-pro-max .frame {
+            width: 430px;
+            height: 937px;
+            background-color: #ffffff;
+        }
+
+        .iphone-pro-max .overlap-group {
+            position: relative;
+            height: 932px;
+            background-image: url(https://i.postimg.cc/J0jkk06s/i-Stock-1400790908.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        .iphone-pro-max .overlap {
+            position: absolute;
+            width: 330px;
+            height: 149px;
+            top: 237px;
+            left: 62px;
+        }
+
+        .iphone-pro-max .text-wrapper {
+            position: absolute;
+            width: 328px;
+            height: 64px;
+            top: 0;
+            left: 2px;
+            font-family: "Beatrice Trial-Semibold", Helvetica;
+            font-weight: 400;
+            color: #323232;
+            font-size: 32px;
+            text-align: center;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .iphone-pro-max .div {
+            position: absolute;
+            width: 330px;
+            height: 101px;
+            top: 48px;
+            left: 0;
+            font-family: "Beatrice Trial-Semibold", Helvetica;
+            font-weight: 400;
+            color: #323232;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .iphone-pro-max .icon-clean-hands {
+            position: absolute;
+            width: 84px;
+            height: 84px;
+            top: 131px;
+            left: 173px;
         }
     </style>
 </head>
+
 <body>
-    <img src="https://i.postimg.cc/hPJYHBJf/foto-confirmaci-n.png" alt="Confirmación">
+    <div class="iphone-pro-max">
+        <div class="iphone-wrapper">
+            <div class="iphone">
+                <div class="frame">
+                    <div class="overlap-group">
+                        <div class="overlap">
+                            <div class="text-wrapper">¡Muchas gracias!</div>
+                            <p class="div">Con tu ayuda hemos eliminado 2 kg de plástico del océano</p>
+                        </div>
+                        <img class="icon-clean-hands" src="https://i.postimg.cc/5jcDs7SP/icon-Clean-Hands-removebg-preview.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://oceancoll.com/";
+        }, 2000); // 2000 milisegundos = 2 segundos
+    </script>
 </body>
+
 </html>
